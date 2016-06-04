@@ -1,3 +1,4 @@
+
 wpAng = typeof wpAng === 'undefined' ? {} : wpAng;
 
 wpAng.init = function(){
@@ -84,7 +85,7 @@ wpAng.init = function(){
 	})
 	.factory('PostsBySlug',function($resource){
 		return $resource(ajaxInfo.api_url+'deed-api/:ID',{
-			id:'@ID'
+			ID:'@id'
 		});
 	})
 
