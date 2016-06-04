@@ -91,6 +91,8 @@ wpAng.init = function(){
 	//CONTROLLERS
 	.controller('listView',['$scope','Posts',function($scope,Posts){
 
+		console.log(ajaxInfo);
+
 		$scope.refreshPosts = function(){
 			Posts.query(function(res){
 				$scope.posts = res;
