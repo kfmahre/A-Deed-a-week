@@ -111,8 +111,10 @@ function add_deed_content_type() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => 15,
-    'menu_icon' => 'dashicons-smiley',
-    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'page-attributes' )
+    'menu_icon' => 'dashicons-hammer',
+    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes' ),
+    'rest_base'          => 'deed-api',
+  	'rest_controller_class' => 'WP_REST_Posts_Controller'
   ); 
 
   register_post_type( 'deed', $args ); 
@@ -144,9 +146,77 @@ function create_deed_taxonomies() {
     'show_admin_column' => true,
     'query_var' => true,
     'public' => true,
+    'rest_base'          => 'deed-category',
+  	'rest_controller_class' => 'WP_REST_Terms_Controller',
   ));
 }
 
+
+// Organization
+// The register_post_type() function is not to be used before the 'init'.
+add_action( 'init', 'add_organization_content_type' );
+
+/* Here's how to create your customized labels */
+function add_organization_content_type() {
+  $labels = array(
+    'name' => _x( 'Organization', 'post type general name' ),
+    'singular_name'     => _x( 'Organization', 'post type singular name' ),
+    'add_new'           => _x( 'Add New', 'Organization' ),
+    'add_new_item'      => __( 'Add New Organization' ),
+    'edit_item'         => __( 'Edit Organization ' ),
+    'new_item'          => __( 'New Organization ' ),
+    'view_item'         => __( 'View Organization' ),
+    'search_items'      => __( 'Search Organizations' ),
+    'not_found'         =>  __( 'No Organizations found' ),
+    'not_found_in_trash' => __( 'No Organizations found in Trash' ),
+    'parent_item_colon' => ''
+  );
+
+  // Create an array for the $args
+  $args = array( 'labels' => $labels, 
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'query_var' => true,
+    'capability_type' => 'post',
+    'has_archive' => true,
+    'hierarchical' => false,
+    'menu_position' => 15,
+    'menu_icon' => 'dashicons-universal-access-alt',
+    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes' )
+  ); 
+
+  register_post_type( 'organization', $args ); 
+}
+
+add_action( 'init', 'create_organization_taxonomies', 0 );
+
+function create_organization_taxonomies() {
+
+  // Taxonomy for Organizations
+  $labels = array(
+    'name' => _x( 'Organization Category', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Organization Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Organization Categories' ),
+    'all_items'         => __( 'All Organization Categories' ),
+    'parent_item'       => __( 'Parent Organization Categories' ),
+    'parent_item_colon' => __( 'Parent Organization Categories:' ),
+    'edit_item'         => __( 'Edit Organization Category' ),
+    'update_item'       => __( 'Update Organization Category' ),
+    'add_new_item'      => __( 'Add New Organization Category' ),
+    'new_item_name'     => __( 'New Organization Category Name' ),
+    'menu_name'         => __( 'Organization Categories' ),
+  );  
+
+  register_taxonomy( 'organizations', array( 'organization' ), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'public' => true,
+  ));
+}
 
 
 ?>
