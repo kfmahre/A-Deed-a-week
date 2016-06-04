@@ -40,6 +40,7 @@ wpAng.init = function(){
 
 	//FACTORIES
 	.factory('Posts',function($resource){
+		console.log(ajaxInfo.api_url);
 		return $resource(ajaxInfo.api_url+'deed-api/:ID',{
 			ID:'@id'
 		},{
