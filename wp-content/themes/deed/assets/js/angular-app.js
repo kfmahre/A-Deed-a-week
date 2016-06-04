@@ -180,9 +180,9 @@ wpAng.init = function() {
 
 	.controller('singleView', ['$scope', '$stateParams', 'PostsBySlug', 'Comments', function($scope, $stateParams, PostsBySlug, Comments) {
 
-		alert("Ur mom (testing)");
 		PostsBySlug.get($stateParams, function(res) {
 			$scope.deed = res.deed;
+			console.log(res);
 		});
 
 		$scope.savecomment = function() {
