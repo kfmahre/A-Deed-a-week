@@ -21,7 +21,9 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1732805993602261&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+	window.isLoggedIn = <?php is_User_Logged_In() ?>
+	</script>
   	<?php // end facebook ?>
 </head>
 <body <?php body_class(); ?>>
