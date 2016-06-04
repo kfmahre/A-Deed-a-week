@@ -84,8 +84,8 @@ wpAng.init = function(){
 		});
 	})
 	.factory('PostsBySlug',function($resource){
-		return $resource(ajaxInfo.api_url+'deed-api/:ID',{
-			ID:'@id'
+		return $resource(ajaxInfo.api_url+'deed-api/:id',{
+			id:'@id'
 		});
 	})
 
