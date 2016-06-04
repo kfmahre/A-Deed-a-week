@@ -179,6 +179,7 @@ wpAng.init = function(){
 
 		PostsBySlug.get($stateParams, function(res){
 			$scope.deed = res.deed;
+			console.log(res);
 		});
 
 		$scope.savecomment = function(){
