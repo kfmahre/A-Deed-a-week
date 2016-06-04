@@ -4,7 +4,7 @@
 		 </div>
 	</div>
 	<div class="row">
-		 <div class="col-sm-8" ng-bind-html="post.post_content | to_trusted"></div>
+		 <div class="col-sm-8" ng-bind-html="post.content.rendered | to_trusted"></div>
 		 <p>{{Directory.url}}</p>
 	</div>
 	<div class="row">

@@ -180,7 +180,7 @@ wpAng.init = function() {
 
 	.controller('singleView', ['$scope', '$stateParams', 'PostsBySlug', 'Comments', function($scope, $stateParams, PostsBySlug, Comments) {
 
-		PostsBySlug.get($stateParams.slug, function(res) {
+		PostsBySlug.get($stateParams, function(res) {
 			$scope.deed = res.deed;
 			console.log(res);
 		});
