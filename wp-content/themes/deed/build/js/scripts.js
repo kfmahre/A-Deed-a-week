@@ -1,27 +1,27 @@
 wpAng = typeof wpAng === 'undefined' ? {} : wpAng;
 
 wpAng.init = function(){
-	
+
 	wpAng.app = angular.module('wpAngularTheme',['ui.router','ngResource','ui.tinymce'])
-	
+
 	//FILTERS
 	.filter('to_trusted',['$sce',function($sce){
 		return function(text){
 			return $sce.trustAsHtml(text);
-		};	
+		};
 	}])
-	
+
 	//RUNFUNC
-	.run(function($rootScope){	
+	.run(function($rootScope){
 		$rootScope.dir = ajaxInfo.template_directory;
 		$rootScope.tinymceOptions = {
 			skin:'lightgray',
 			height:300
 		};
-		
+
 		$rootScope.is_admin = ajaxInfo.is_admin;
 	})
-	
+
 	//ROUTES
 	.config(function($stateProvider,$urlRouterProvider){
 		$urlRouterProvider.otherwise('/');
@@ -37,10 +37,10 @@ wpAng.init = function(){
 				templateUrl:ajaxInfo.template_directory+'single.html'
 			})
 	})
-	
+
 	//FACTORIES
 	.factory('Posts',function($resource){
-		return $resource(ajaxInfo.api_url+'posts/:ID',{
+		return $resource(ajaxInfo.api_url+'deeds/:ID',{
 			ID:'@id'
 		},{
 			'update':{
@@ -87,17 +87,17 @@ wpAng.init = function(){
 			id:'@id'
 		});
 	})
-	
+
 	//CONTROLLERS
 	.controller('listView',['$scope','Posts',function($scope,Posts){
-		
+
 		$scope.refreshPosts = function(){
 			Posts.query(function(res){
 				$scope.posts = res;
 			});
 		};
 		$scope.refreshPosts();
-		
+
 		//EDITPOST
 		$scope.openPost = {}
 		$scope.editPost = function(post){
@@ -108,7 +108,7 @@ wpAng.init = function(){
 				tinymce.activeEditor.setContent($scope.openPost.content.rendered);
 			},100);
 		};
-		
+
 		//DELETEPOSTFUNCTION
 		$scope.deletePost = function(index,post){
 			if(post.id){
@@ -119,9 +119,9 @@ wpAng.init = function(){
 				}
 			}
 		};
-		
+
 		//SAVEPOSTFUNCTION
-		$scope.savePost = function(){	
+		$scope.savePost = function(){
 			if($scope.openPost.newPost){
 				$scope.openPost.title  =  $scope.openPost.title.rendered;
 				$scope.openPost.content  =  $scope.openPost.content.rendered;
@@ -140,7 +140,7 @@ wpAng.init = function(){
 				});
 			}
 		};
-		
+
 		//ADDNEWPOST
 		$scope.addPost = function(){
 			$scope.openPost = {
@@ -148,37 +148,37 @@ wpAng.init = function(){
 				status:'publish'
 			}
 		}
-		
+
 		//CLEARFORMFUNCTION
 		$scope.clear = function(){
 			$scope.$root.openPost = false;
 			jQuery('#save').modal('hide');
 		};
-		
-		
-		//SAVEMODALOPEN/COSE	
+
+
+		//SAVEMODALOPEN/COSE
 		$scope.openSaveModal = function(){
 			jQuery('#save').modal('show');
 		}
-		
+
 		$scope.closeSaveModal = function(){
 			jQuery('#save').modal('hide');
 		}
-		
+
 		//DATEFUNCTION
 		$scope.datify = function(date){
 			$scope.date = newDate(date);
 			return $scope.date.getDate()+'/'+$scope.date.getMonth()+'/'+$scope.date.getYear();
 		};
-		
+
 	}])
-	
+
 	.controller('singleView',['$scope','$stateParams','PostsBySlug','Comments',function($scope,$stateParams,PostsBySlug,Comments){
-		
+
 		PostsBySlug.get($stateParams,function(res){
 			$scope.post = res.post;
 		});
-		
+
 		$scope.savecomment = function(){
 			$scope.openComment.post = $scope.post.ID;
 			Comments.save($scope.openComment,function(res){
@@ -191,12 +191,13 @@ wpAng.init = function(){
 				}
 			});
 		}
-		
+
 	}])
-	
+
 };
 
 wpAng.init();
+
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-flexboxlegacy-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-shiv-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
  */
