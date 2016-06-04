@@ -83,13 +83,15 @@ wpAng.init = function(){
 		});
 	})
 	.factory('PostsBySlug',function($resource){
-		return $resource(ajaxInfo.api_url+'post_by_slug/:id',{
+		return $resource(ajaxInfo.api_url+'deed-api/:id',{
 			id:'@id'
 		});
 	})
 
 	//CONTROLLERS
 	.controller('listView',['$scope','Posts',function($scope,Posts){
+
+		console.log(ajaxInfo);
 
 		$scope.refreshPosts = function(){
 			Posts.query(function(res){
