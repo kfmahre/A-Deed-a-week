@@ -1,9 +1,7 @@
 	<div class="row projects">
 		 <div class="col-sm-12">
 			<h2>{{deed.title.rendered}}</h2>
-			<p>
-				{{deed.content.rendered}}
-			</p>
+			<p ng-bind-html="deed.content.rendered | to_trusted"></p>
 		 </div>
 	</div>
 	<div class="row">
