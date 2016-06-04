@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> ng-app="wpAngularTheme">
 <head>
   	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   	<meta name="author" content="Ciplex">
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,7 +14,7 @@
     <![endif]-->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <?php // Facebook code ?>
-    
+
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -35,7 +35,7 @@
 				</h1>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
-				<span>by: <a href="http://www.roysivan.com">Roy Sivan</a></span>
+				<span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">WATCH THIS VIDEO!</a></span>
 			</div>
 		</div>
 </header>
