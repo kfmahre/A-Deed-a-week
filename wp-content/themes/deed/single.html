@@ -1,6 +1,6 @@
 	<div class="row projects">
 		 <div class="col-sm-12">
-			<h2>{{post.post_title}}</h2>
+			<h2>{{deed.title.rendered}}</h2>
 		 </div>
 	</div>
 	<div class="row">
@@ -20,7 +20,7 @@
 							<p ng-bind-html="comment.comment_content | to_trusted "></p>
 						</blockquote>
 						<span class="author">- {{comment.comment_author}} </span>
-					</article>		
+					</article>
 				</div>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 						<input type="email" name="email" id="email" ng-model="openComment.author_email" placeholder="Email Address" required />
 						<span ng-show="CommentForm.email.$error.required" class="help-block">Required</span>
 					</div>
-					<div class="form-group">					
+					<div class="form-group">
 						<textarea	 required name="comment" ng-model="openComment.content" placeholder="Your Comment..."></textarea><br/>
 						<span ng-show="CommentForm.comment.$error.required" class="help-block">Required</span>
 					</div>

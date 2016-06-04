@@ -32,7 +32,7 @@ wpAng.init = function(){
 				templateUrl:ajaxInfo.template_directory+'list.html'
 			})
 			.state('single',{
-				url:'/post/:slug',
+				url:'/deed/:slug',
 				controller:'singleView',
 				templateUrl:ajaxInfo.template_directory+'single.html'
 			})
@@ -91,6 +91,7 @@ wpAng.init = function(){
 	//CONTROLLERS
 	.controller('listView',['$scope','Posts',function($scope,Posts){
 
+
 		$scope.refreshPosts = function(){
 			Posts.query(function(res){
 				$scope.posts = res;
@@ -112,7 +113,7 @@ wpAng.init = function(){
 		//DELETEPOSTFUNCTION
 		$scope.deletePost = function(index,post){
 			if(post.id){
-				var deleteConf = confirm('Areyousureyouwanttodelete'+post.title.rendered);
+				var deleteConf = confirm('Are you sure you want to delete '+post.title.rendered);
 				if(deleteConf){
 					$scope.posts.splice(index,1);
 					Posts.delete({ID:post.id});
@@ -176,7 +177,7 @@ wpAng.init = function(){
 	.controller('singleView',['$scope','$stateParams','PostsBySlug','Comments',function($scope,$stateParams,PostsBySlug,Comments){
 
 		PostsBySlug.get($stateParams,function(res){
-			$scope.post = res.post;
+			$scope.deed = res.deed;
 		});
 
 		$scope.savecomment = function(){
