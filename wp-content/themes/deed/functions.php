@@ -113,6 +113,7 @@ function add_deed_content_type() {
     'menu_position' => 15,
     'menu_icon' => 'dashicons-hammer',
     'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes' ),
+    'show_in_rest'       => true,
     'rest_base'          => 'deed-api',
   	'rest_controller_class' => 'WP_REST_Posts_Controller'
   ); 
