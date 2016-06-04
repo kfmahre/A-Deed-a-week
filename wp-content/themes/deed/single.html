@@ -1,10 +1,11 @@
 	<div class="row projects">
 		 <div class="col-sm-12">
 			<h2>{{deed.title.rendered}}</h2>
+			<p ng-bind-html="deed.content.rendered | to_trusted"></p>
 		 </div>
 	</div>
 	<div class="row">
-		 <div class="col-sm-8" ng-bind-html="post.post_content | to_trusted"></div>
+		 <div class="col-sm-8" ng-bind-html="post.content.rendered | to_trusted"></div>
 		 <p>{{Directory.url}}</p>
 	</div>
 	<div class="row">
