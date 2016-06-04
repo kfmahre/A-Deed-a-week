@@ -179,7 +179,7 @@ wpAng.init = function(){
 
 		PostsBySlug.get($stateParams, function(res){
 			$scope.deed = res.deed;
-			console.log(res);
+			alert("Ur mom (testing)");
 		});
 
 		$scope.savecomment = function(){
