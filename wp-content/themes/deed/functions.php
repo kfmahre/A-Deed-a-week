@@ -147,6 +147,7 @@ function create_deed_taxonomies() {
     'show_admin_column' => true,
     'query_var' => true,
     'public' => true,
+    'show_in_rest'       => true,
     'rest_base'          => 'deed-category',
   	'rest_controller_class' => 'WP_REST_Terms_Controller',
   ));
@@ -184,7 +185,10 @@ function add_organization_content_type() {
     'hierarchical' => false,
     'menu_position' => 15,
     'menu_icon' => 'dashicons-universal-access-alt',
-    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes' )
+    'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'page-attributes' ),
+    'show_in_rest'       => true,
+    'rest_base'          => 'organization-api',
+  	'rest_controller_class' => 'WP_REST_Posts_Controller'
   ); 
 
   register_post_type( 'organization', $args ); 
@@ -216,6 +220,9 @@ function create_organization_taxonomies() {
     'show_admin_column' => true,
     'query_var' => true,
     'public' => true,
+    'show_in_rest'       => true,
+    'rest_base'          => 'organization-category',
+  	'rest_controller_class' => 'WP_REST_Terms_Controller',
   ));
 }
 
