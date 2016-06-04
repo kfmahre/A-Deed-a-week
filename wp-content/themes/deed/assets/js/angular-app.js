@@ -20,7 +20,6 @@ wpAng.init = function(){
 		};
 
 		$rootScope.is_admin = ajaxInfo.is_admin;
-		console.log(ajaxInfo);
 	})
 
 	//ROUTES
@@ -91,6 +90,8 @@ wpAng.init = function(){
 
 	//CONTROLLERS
 	.controller('listView',['$scope','Posts',function($scope,Posts){
+
+		console.log(ajaxInfo);
 
 		$scope.refreshPosts = function(){
 			Posts.query(function(res){
