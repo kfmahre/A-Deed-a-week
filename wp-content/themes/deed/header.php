@@ -27,7 +27,7 @@
 
 	<?php if(is_user_logged_in()) : ?>
 	<script>window.isLoggedIn = true;</script>
-	<?php endif;?
+	<?php endif ?>
 </head>
 <body <?php body_class(); ?>>
 <header class="container header">
