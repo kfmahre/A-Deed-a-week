@@ -32,7 +32,7 @@ wpAng.init = function() {
 				templateUrl: ajaxInfo.template_directory + 'list.html'
 			})
 			.state('single', {
-				url: '/deed/:slug',
+				url: '/deed/:id/:slug',
 				controller: 'singleView',
 				templateUrl: ajaxInfo.template_directory + 'single.html'
 			})
@@ -182,7 +182,6 @@ wpAng.init = function() {
 
 		PostsBySlug.get($stateParams, function(res) {
 			$scope.deed = res.deed;
-			console.log(res);
 		});
 
 		$scope.savecomment = function() {
