@@ -181,6 +181,7 @@ wpAng.init = function() {
 	.controller('singleView', ['$scope', '$stateParams', 'PostsBySlug', 'Comments', function($scope, $stateParams, PostsBySlug, Comments) {
 
 		PostsBySlug.get($stateParams, function(res) {
+			$scope.res = res;
 			$scope.deed = res.deed;
 		});
 
