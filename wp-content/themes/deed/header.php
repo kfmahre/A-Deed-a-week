@@ -22,9 +22,12 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1732805993602261&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-	window.isLoggedIn = <?php is_User_Logged_In() ?>
 	</script>
   	<?php // end facebook ?>
+	  
+	<?php if(is_user_logged_in()) : ?>
+	<script>window.isLoggedIn = true;</script>
+	<?php endif;?
 </head>
 <body <?php body_class(); ?>>
 <header class="container header">
