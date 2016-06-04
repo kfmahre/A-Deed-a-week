@@ -35,7 +35,12 @@
 				</h1>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
-				<span>by: <a href="http://www.roysivan.com">Roy Sivan</a></span>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<?php wp_nav_menu(); ?>
 			</div>
 		</div>
 </header>
