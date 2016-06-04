@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> ng-app="wpAngularTheme">
 <head>
   	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   	<meta name="author" content="Ciplex">
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,8 +13,7 @@
 	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-    <?php // Facebook code ?>
-    
+    <?php // Facebook code ?>    
     <script>
 		(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,7 +25,7 @@
 		window.isLoggedIn = false;
 	</script>
   	<?php // end facebook ?>
-	  
+
 	<?php if(is_user_logged_in()) : ?>
 	<script>window.isLoggedIn = true;</script>
 	<?php endif ?>
@@ -36,13 +35,13 @@
 		<div class="row">
 			<div class="col-sm-7">
 				<h1>
-					<a ui-sref="list">
+					<a href="/">
 						<?php echo bloginfo('name'); ?>
 					</a>
 				</h1>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
-				
+
 			</div>
 		</div>
 		<div class="row">
