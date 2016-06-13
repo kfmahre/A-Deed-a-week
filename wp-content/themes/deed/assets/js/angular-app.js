@@ -26,10 +26,10 @@ wpAng.init = function() {
 	//ROUTES
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 		$locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false,
-    rewriteLinks: false
-});
+			enabled: true,
+			requireBase: false,
+			rewriteLinks: true
+		});
 		$urlRouterProvider.otherwise('/');
 		$stateProvider
 			.state('list', {
