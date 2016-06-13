@@ -2,6 +2,7 @@ wpAng = typeof wpAng === 'undefined' ? {} : wpAng;
 
 wpAng.init = function() {
 
+
 	wpAng.app = angular.module('wpAngularTheme', ['ui.router', 'ngResource', 'ui.tinymce'])
 
 	//FILTERS
@@ -23,7 +24,12 @@ wpAng.init = function() {
 	})
 
 	//ROUTES
-	.config(function($stateProvider, $urlRouterProvider) {
+	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+		$locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false,
+    rewriteLinks: false
+});
 		$urlRouterProvider.otherwise('/');
 		$stateProvider
 			.state('list', {
