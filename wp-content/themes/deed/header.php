@@ -55,7 +55,7 @@
 				</h1>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
-				<img src="bracelet300px.png" class="bracelets">
+				<img src="images/bracelet300px.png" class="bracelets">
 			</div>
 		</div>
 		<div class="row">
