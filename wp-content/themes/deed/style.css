@@ -27,10 +27,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* HTML 5*/
 header, article, footer, section, nav{
-	display:block;	
+	display:block;
 }
+
+h1, h2, h3, h4 {text-shadow: 3px 3px 6px #212121; opacity: 0.75;}
+h1 { font-size: 3em;  }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2.3em; }
+h4 { font-size: 1.9em; }
+
 .clear{
-	clear:both;	
+	clear:both;
 }
 
 
