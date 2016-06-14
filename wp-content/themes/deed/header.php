@@ -8,6 +8,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   	<link rel="shortcut icon" href="/favicon.ico">
   	<link rel="apple-touch-icon" href="/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic' rel='stylesheet' type='text/css'>
    	<?php wp_head();?>
     <!--[if lt IE 9]>
 	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,7 +45,7 @@
 	<?php endif ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="container header">
+<header class="container">
 		<div class="row">
 			<div class="col-sm-7">
 				<h1>
