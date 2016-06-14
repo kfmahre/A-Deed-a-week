@@ -24,52 +24,51 @@
 	-ms-box-shadow:$x $y $blur $color;
 }
 
-/** COLOR VARIABLES **/
-.bg-grey-rl{
+/** COLOR mix-ins **/
+@mixin bg-grey-rl(){
   background-color: #e0e0e0;
 	color: #000000;
 }
 
 
-.bg-grey-xl {
+@mixin bg-grey-xl(){
   background-color: #f5f5f5;
   color: #000000;
 }
 
-.bg-grey-ul {
+@mixin bg-grey-ul(){
   background-color: #fafafa;
   color: #000000;
 }
 
-.bg-white {
+@mixin bg-white(){
   background-color: #ffffff;
   color: #000000;
 }
 
-.bg-black {
+@mixin bg-black(){
   background-color: #000000;
   color: #ffffff;
 }
 
-.bg-grey-dk {
+@mixin bg-grey-dk(){
   background-color: #212121;
   color: #ffffff;
 }
 
-.bg-grey-md {
+@mixin bg-grey-md(){
   background-color: #303030;
   color: #ffffff;
 }
 
-.bg-grey-lt {
+@mixin bg-grey-lt(){
   background-color: #424242;
   color: #ffffff;
 }
 
 /** SITE WIDE **/
 html, body{
-  background-color: #e0e0e0;
-	color: #000000;
+@include bg-grey-xl();
 	margin:0;
 	padding:0;
 }
@@ -91,9 +90,17 @@ h6 { font-size: 1.1em; }
 
 .mce-menubar.mce-toolbar { display: none; }
 
+.fade.ng-hide-add, .fade.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.fade.ng-hide {
+  opacity: 0;
+}
+
 /** HEADER **/
 header{
-	@include gradient-bg();
+@include bg-grey-dk();
 
 	span{
 		display:block;
