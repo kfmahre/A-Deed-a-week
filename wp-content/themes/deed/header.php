@@ -44,7 +44,7 @@
 	<?php endif ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="container">
+<header class="container header">
 		<div class="row">
 			<div class="col-sm-7">
 				<h1>
