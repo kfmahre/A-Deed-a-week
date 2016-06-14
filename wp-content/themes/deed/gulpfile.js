@@ -9,7 +9,7 @@ gulp.task('sass', function(){
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCss({compatibility:'ie8'}))
 		.pipe(gulp.dest('build/css/'));
-	
+
 });
 
 
@@ -29,23 +29,23 @@ gulp.task('angular', function(){
 	])
 	.pipe(concat('angular.min.js'))
 	.pipe(gulp.dest('build/js'));
-	
+
 	gulp.src([
-		'node_modules/angular/angular.min.js.map', 
+		'node_modules/angular/angular.min.js.map',
 		'node_modules/angular-resource/angular-resource.min.js.map'
 	])
 	.pipe(gulp.dest('build/js'));
-	
+
 	gulp.src([
 		'node_modules/tinymce/themes/modern/*.js',
 	])
 	.pipe(gulp.dest('build/js/themes/modern/'));
-	
+
 	gulp.src([
 		'node_modules/tinymce/skins/lightgray/*.css',
 	])
 	.pipe(gulp.dest('build/js/skins/lightgray'));
-	
+
 	gulp.src([
 		'node_modules/tinymce/skins/lightgray/fonts/*',
 	])

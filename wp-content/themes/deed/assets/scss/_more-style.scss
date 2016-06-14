@@ -31,13 +31,20 @@ body{
 	padding:0;
 }
 
-a{
-	
-}
-h1,h2,h3,h4,h5,h6{
+a { text-decoration: none; color: #FF5722;}
+a:hover { text-decoration: underline; color: #FBE9E7;}
+
+h1,h2,h3,h4,h5,h6{ font-weight: 700; text-shadow: 3px 3px 6px #212121; opacity: 0.75;
 	margin:0;
 	padding:0;
 }
+
+h1 { font-size: 3em;  }
+h2 { font-size: 2.7em; }
+h3 { font-size: 2.3em; }
+h4 { font-size: 1.9em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1.1em; }
 
 .mce-menubar.mce-toolbar { display: none; }
 
@@ -45,7 +52,7 @@ h1,h2,h3,h4,h5,h6{
 header{
 	padding:20px 0;
 	color:#FFF;
-	
+
 	a{
 		color:#e7e7e7;
 		text-decoration: none;
@@ -62,7 +69,7 @@ header{
 				text-decoration: none;
 			}
 		}
-	}	
+	}
 	span{
 		display:block;
 		font-size:14px;
@@ -74,7 +81,7 @@ nav{
 		margin:0;
 		padding:0;
 		list-style: none;
-		
+
 		li{
 			display:inline-block;
 			a{
@@ -108,7 +115,7 @@ nav{
 /** PROJECTS ROW **/
 article.projects{
 	padding:10px 0;
-	
+
 	span.date{
 		display:block;
 		font-size:14px;
@@ -117,13 +124,13 @@ article.projects{
 	}
 	a{
 		line-height:20px;
-		
+
 		&.title{
 			color:#05057c;
 			display:block;
 			font-size:20px;
 		}
-		
+
 	}
 	p{
 		padding-right:20px;
@@ -137,7 +144,7 @@ article.projects{
 /** SAVE MODAL **/
 div#save{
 	padding:20px;
-	
+
 	form{
 		width:100%;
 		input,textarea, button{
@@ -159,7 +166,7 @@ div#save{
 			display:block;
 			margin:0 auto;
 			position: relative;
-			
+
 			table{
 				width:100%;
 			}
@@ -171,7 +178,7 @@ div.sidebar{
 	section{
 		margin-bottom:40px;
 		padding:10px 0;
-		
+
 		&:first-child{
 			padding-top:0;
 		}
@@ -209,5 +216,5 @@ footer{
 	padding:20px 0;
 	color:#FFF;
 	@include gradient-bg();
-	
+
 }
