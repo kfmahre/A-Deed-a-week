@@ -13,7 +13,7 @@
 	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-    <?php // Facebook code ?>    
+    <?php // Facebook code ?>
     <script>
 		(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -44,7 +44,7 @@
 	<?php endif ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="container header">
+<header class="container">
 		<div class="row">
 			<div class="col-sm-7">
 				<h1>
