@@ -67,24 +67,25 @@
 }
 
 .btn.btn-primary.btn-small {
-	background-color: transparent;
-	color: #000000;
-	border: #000000;
+	background-color: #ffffff;
+	color: #455A64;
+	border-color: #455A64;
 	border-radius: 0px;
+  transition: all linear 0.2s;
 }
 
 .btn.btn-primary.btn-small:hover {
   background-color: #212121;
 	color: #ffffff;
-	border: #ffffff;
-  transition: all linear 0.1s;
+	border-color: #ffffff;
+  transition: all linear 0.2s;
 }
 
 .btn.btn-primary.btn-small:active {
 	background-color: transparent;
 	color: #FFD54F;
-	border: #ffffff;
-  transition: all linear 0.1s;
+	border-color: #ffffff;
+  transition: all linear 0.2s;
 }
 /** SITE WIDE **/
 html, body{
