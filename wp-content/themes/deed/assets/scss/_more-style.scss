@@ -93,26 +93,8 @@ h6 { font-size: 1.1em; }
 
 /** HEADER **/
 header{
-  background-color: #303030;
-  color: #ffffff;
+	@include gradient-bg();
 
-	a{
-		color:#e7e7e7;
-		text-decoration: none;
-		&:hover{
-			color:#FFF;
-		}
-	}
-	h1{
-		margin:0;
-		a{
-			color:#FFF;
-			&:hover{
-				color:#FFF;
-				text-decoration: none;
-			}
-		}
-	}
 	span{
 		display:block;
 		font-size:14px;
