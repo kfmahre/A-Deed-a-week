@@ -66,9 +66,30 @@
   color: #ffffff;
 }
 
+.btn.btn-primary.btn-small {
+	background-color: transparent;
+	color: #000000;
+	border: #000000;
+	border-radius: 0px;
+}
+
+.btn.btn-primary.btn-small:hover {
+  background-color: #212121;
+	color: #ffffff;
+	border: #ffffff;
+  transition: all linear 0.1s;
+}
+
+.btn.btn-primary.btn-small:active {
+	background-color: transparent;
+	color: #FFD54F;
+	border: #ffffff;
+  transition: all linear 0.1s;
+}
 /** SITE WIDE **/
 html, body{
-@include bg-grey-xl();
+  background-color: #f5f5f5;
+  color: #000000;
 	margin:0;
 	padding:0;
 }
@@ -100,7 +121,8 @@ h6 { font-size: 1.1em; }
 
 /** HEADER **/
 header {
-@include bg-grey-dk();
+  background-color: #212121;
+  color: #ffffff;
 
 	span{
 		display:block;
