@@ -33,7 +33,7 @@ body{
 }
 
 a { text-decoration: none; color: $primary-txt;}
-a:hover:visited { text-decoration: none; color: $accent-color; }
+a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
 h1,h2,h3,h4,h5,h6{ font-weight: 700; text-shadow: 3px 3px 6px #212121; opacity: 0.75;
@@ -60,7 +60,7 @@ h6 { font-size: 1.1em; }
 
 /** HEADER **/
 header {
-  background-color: $primary-bg;
+  background-color: $primary-900;
   color: #ffffff;
   width: 100%;
   padding: 0 10%;
@@ -71,6 +71,9 @@ header {
 .content-wrapper{
 	@include box-shadow(0,0,20px,rgba(0,0,0,0.4));
 	padding:5% 0;
+	a { text-decoration: none; color: $primary-700;}
+	a:hover { text-decoration: none; color: $accent-color; }
+	a:active:visited { text-decoration: none; color: $primary-700; }
 }
 /** PROJECTS ROW **/
 article.projects{
@@ -196,6 +199,6 @@ footer{
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	color:#FFF;
-	background-color: $primary-bg;
+	background-color: $primary-900;
 
 }
