@@ -74,8 +74,8 @@ html, body{
 	padding:0;
 }
 
-a { text-decoration: none; color: #FF5722;}
-a:hover { text-decoration: underline; color: #FBE9E7;}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 h1,h2,h3,h4,h5,h6{ font-weight: 700; text-shadow: 3px 3px 6px #212121; opacity: 0.75;
 	margin:0;
@@ -93,9 +93,8 @@ h6 { font-size: 1.1em; }
 
 /** HEADER **/
 header{
-  background-color: #212121;
+  background-color: #303030;
   color: #ffffff;
-
 
 	a{
 		color:#e7e7e7;
@@ -120,6 +119,7 @@ header{
 		padding:20px 0;
 	}
 }
+
 nav{
 	ul{
 		margin:0;
@@ -154,7 +154,6 @@ nav{
 .content-wrapper{
 	@include box-shadow(0,0,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
-	background: #FFF;
 }
 /** PROJECTS ROW **/
 article.projects{
@@ -164,13 +163,11 @@ article.projects{
 		display:block;
 		font-size:14px;
 		font-style:italic;
-		color:#05057c;
 	}
 	a{
 		line-height:20px;
 
 		&.title{
-			color:#05057c;
 			display:block;
 			font-size:20px;
 		}
