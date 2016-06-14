@@ -21,10 +21,11 @@ $primary-700: #1976D2;
 $primary-900: #0D47A1;
 $accent-color: #304FFE;
 $primary-bg: #E3F2FD;
+$font-stack: 'Open Sans', sans-serif;
 
 /** SITE WIDE **/
 body {
-	font-family: 'Open Sans', sans-serif;
+	font: $font-stack;
 	background-color: $primary-900;
 	color: #000000;
 	margin:0;
@@ -35,7 +36,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6{ font-weight: 600; text-shadow: 2px 2px 5px #212121; opacity: 0.80;
+h1,h2,h3,h4,h5,h6 { font-weight: 600; text-shadow: 2px 2px 5px #212121; opacity: 0.80;
 	margin:0;
 	padding:0;
 }
