@@ -42,7 +42,7 @@
 	<script>window.isLoggedIn = true;</script>
 	<?php endif ?>
 </head>
-<body <?php body_class(); ?>>
+<body class="conatiner-fluid" <?php body_class(); ?>>
 <header class="container">
 		<div class="row">
 			<div class="col-sm-7">
