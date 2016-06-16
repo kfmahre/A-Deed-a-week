@@ -1,4 +1,4 @@
-/** LESS MIX-INS **/
+/** LESS MIX-INS **/ /*
 @mixin box-shadow-inset($x:0, $y:0, $blur:10px, $color:rgba(0,0,0,0.5)){
 	box-shadow:inset $x $y $blur $color;
 	-moz-box-shadow:inset $x $y $blur $color;
@@ -14,7 +14,7 @@
 	-ms-box-shadow:$x $y $blur $color;
 }
 
-/** COLOR variables **/
+/** COLOR variables **/ /*
 $primary: #2196F3;
 $primary-txt: #ffffff;
 $primary-700: #1976D2;
@@ -23,7 +23,7 @@ $accent-color: #304FFE;
 $primary-bg: #E3F2FD;
 $font-stack: 'Open Sans', sans-serif;
 
-/** SITE WIDE **/
+/** SITE WIDE **/ /*
 body {
 	font: $font-stack;
 	background-color: $primary-900;
@@ -58,7 +58,7 @@ h6 { font-size: 1.1em; }
 	opacity: 0;
 }
 
-/** HEADER **/
+/** HEADER **/ /*
 header {
 	background-color: $primary-900;
 	color: #ffffff;
@@ -94,7 +94,7 @@ header {
 	}
 }
 
-/** CONTENT **/
+/** CONTENT **/ /*
 .content-wrapper{
 	background-color: $primary-bg;
 	@include box-shadow(0,0,20px,rgba(0,0,0,0.4));
@@ -104,7 +104,7 @@ header {
 	a:active:visited { text-decoration: none; color: $primary-700; }
 }
 
-/** PROJECTS ROW **/
+/** PROJECTS ROW **/ /*
 
 article.projects{
 	padding:10px 0;
@@ -132,7 +132,7 @@ article.projects{
 	}
 }
 
-/** Buttons **/
+/** Buttons **/ /*
 
 .btn.btn-primary.btn-small {
 	background-color: $primary;
@@ -156,7 +156,7 @@ article.projects{
 	transition: all linear 0.2s;
 }
 
-/** SAVE MODAL **/
+/** SAVE MODAL **/ /*
 
 div#save{
 	padding:20px;
@@ -190,7 +190,7 @@ div#save{
 	}
 }
 
-/** SIDEBAR **/
+/** SIDEBAR **/ /*
 
 div.sidebar{
 	section{
@@ -214,7 +214,7 @@ div.sidebar{
 	}
 }
 
-/** COMMENTS **/
+/** COMMENTS **/ /*
 
 article.comment{
 	span.author{
@@ -231,10 +231,12 @@ article.comment{
 }
 
 /** FOOTER **/
-
+/*
 footer{
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	color:#FFF;
 	background-color: $primary-900;
 }
+
+*/
