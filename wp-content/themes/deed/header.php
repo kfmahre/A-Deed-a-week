@@ -44,8 +44,8 @@
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
 <header class="jumbotron container">
-		<div class="row">
-			<div class="col-sm-7">
+		<div class="row container header-title-row">
+			<div class="col-sm-12">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="bracelets" alt="picture">
 				<h1>
 					<a class="blog-name" href="/"><?php echo bloginfo('name'); ?></a>

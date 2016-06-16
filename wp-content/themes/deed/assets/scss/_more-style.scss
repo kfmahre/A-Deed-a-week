@@ -86,31 +86,38 @@ header {
 	}
 	.bracelets {
 		max-width: 100%;
-		max-height: 66%;
 		border-radius: 50%;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 	}
-	ul {
-		list-style-type: none;
-		li {
-			a {
+}
+
+.header-title-row {
+	max-height: 50%;
+}
+
+.header_menu 	ul {
+	list-style-type: none;
+	li {
+		a {
 				text-shadow: 2px 2px 2px #212121;
 				font-size: 2.0em;
-				margin: 5px 0;
+				margin: 5px 5px;
 			}
 			a:hover {
 				color: $primary-txt;
 				font-style: italic;
 			}
 		}
-	}
 }
 
-.header_menu li {display: inline; }
+.header_menu li {
+	display: inline;
+}
 
 .jumbotron {
 		background-color: transparent;
 }
+
 /** CONTENT **/
 .content-wrapper{
 	background-color: $primary-bg;
