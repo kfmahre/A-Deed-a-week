@@ -43,7 +43,7 @@
 	<?php endif ?>
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
-<header class="container">
+<header class="jumbotron container">
 		<div class="row">
 			<div class="col-sm-7">
 				<h1>
