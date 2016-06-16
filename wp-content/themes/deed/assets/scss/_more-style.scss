@@ -27,6 +27,7 @@ $font-stack: 'Open Sans', sans-serif;
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -87,15 +88,15 @@ header {
 	}
 }
 
-.header-title-row {
-	max-height: 250px;
+.logo-title-row {
+	height: 250px;
 	display: inline;
 	overflow: hidden;
 		img {
 		float: left;
 		max-width: 100%;
 		border-radius: 50%;
-		margin: 0 5px 5px 0;
+		margin: 5px;
 	}
 }
 
@@ -116,10 +117,6 @@ header {
 
 .header_menu li {
 	display: inline;
-}
-
-.jumbotron {
-		background-color: transparent;
 }
 
 /** CONTENT **/

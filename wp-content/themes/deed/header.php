@@ -44,9 +44,9 @@
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
 <header class="row container">
-		<div class="row container header-title-row col-sm-12">
+		<div class="row container logo-title-row col-sm-12">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="logo" alt="picture">
-				<h1><?php echo bloginfo('name'); ?></h1>
+				<h1 class="title"><?php echo bloginfo('name'); ?></h1>
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
