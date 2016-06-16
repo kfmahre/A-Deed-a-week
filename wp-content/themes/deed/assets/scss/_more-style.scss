@@ -121,7 +121,7 @@ header {
 /** PROJECTS ROW **/
 .post-title {
 	opacity: 0.8;
-	color: $primary-700;
+	color: $primary-900;
 	margin: 5px 0;
 }
 .searchinput {
@@ -130,7 +130,7 @@ header {
 	max-width: 25%;
 	min-width: 150px;;
 	border: 2px solid rgba(0,0,0,0.4);
-	@include box-shadow(0,0,20px,rgba(0,0,0,0.4))
+	box-shadow: 2px 2px 5px $accent-color;
 }
 
 article.projects{
@@ -146,7 +146,7 @@ article.projects{
 		font-style:italic;
 	}
 	a{
-		font-size: 2.1em;
+		font-size: 2.3em;
 		text-decoration: none;
 
 		&.title{
@@ -155,7 +155,7 @@ article.projects{
 
 	}
 	p{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	div.edit{
 		display:inline-block;
