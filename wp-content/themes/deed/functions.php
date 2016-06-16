@@ -28,8 +28,8 @@ class angularjs_wp_theme {
 		if ( !class_exists( 'WP_REST_Response' ) ) {
 		  add_action( 'admin_notices', array( $this, 'apiError' ) );
 		}
-
 	}
+
 	function apiError(){
 
 		echo '<div class="error"><p><strong>JSON REST API</strong> must be installed and activated for this theme to work properly</p></div>';

@@ -58,7 +58,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<?php wp_nav_menu(); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
 			</div>
 		</div>
 </header>
