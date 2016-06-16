@@ -7,58 +7,58 @@ require 'inc/angular-enqueue.php';
 
 
 class angularjs_wp_theme {
-	
+
 	function init() {
-		
+
 		add_action( 'init', array( $this, 'register_my_menus' ) );
 		add_action( 'init', array( $this, 'register_my_sidebar' ) );
 		add_action( 'after_setup_theme', array( $this, 'add_awesome_theme_support' ) );
 		add_action( 'admin_init', array( $this, 'apiCheck' ) );
-		
+
 		$angularScripts = new angular_enqueue();
 		$angularScripts->init();
-		
+
 		$ang_routes = new angular_theme_routes();
 		$ang_routes->__init();
-		
+
 	}
-	
+
 	function apiCheck(){
-		
+
 		if ( !class_exists( 'WP_REST_Response' ) ) {
 		  add_action( 'admin_notices', array( $this, 'apiError' ) );
-		} 
-		
+		}
+
 	}
 	function apiError(){
-		
+
 		echo '<div class="error"><p><strong>JSON REST API</strong> must be installed and activated for this theme to work properly</p></div>';
-		
+
 	}
 
 	/* THEME SUPPORT */
 	function add_awesome_theme_support(){
-		
+
 		add_theme_support( 'post-thumbnails' );
 		add_post_type_support( 'page', 'excerpt' );
-		
+
 	}
 
 	// REGISTER MENUS
 	function register_my_menus() {
-		
+
 	  register_nav_menus(
 	    array(
 	      'header-menu' => __( 'Header Menu' ),
 	      'footer-menu' => __( 'Footer Menu' )
 	    )
 	  );
-	  
+
 	}
 
 	//REGISTER SIDEBAR
 	function register_my_sidebar() {
-		
+
 		register_sidebar(array(
 			'name' 			=> 'Right Side',
 			'id' 			=> 'right-sidebar',
@@ -67,7 +67,7 @@ class angularjs_wp_theme {
 			'before_title' 	=> '<h4>',
 			'after_title' 	=> '</h4>'
 		));
-		
+
 	}
 
 }
@@ -102,7 +102,7 @@ function add_deed_content_type() {
   );
 
   // Create an array for the $args
-  $args = array( 'labels' => $labels, 
+  $args = array( 'labels' => $labels,
     'public' => true,
     'publicly_queryable' => true,
     'show_ui' => true,
@@ -116,9 +116,9 @@ function add_deed_content_type() {
     'show_in_rest'       => true,
     'rest_base'          => 'deed-api',
   	'rest_controller_class' => 'WP_REST_Posts_Controller'
-  ); 
+  );
 
-  register_post_type( 'deed', $args ); 
+  register_post_type( 'deed', $args );
 }
 
 add_action( 'init', 'create_deed_taxonomies', 0 );
@@ -138,7 +138,7 @@ function create_deed_taxonomies() {
     'add_new_item'      => __( 'Add New Deed Category' ),
     'new_item_name'     => __( 'New Deed Category Name' ),
     'menu_name'         => __( 'Deed Categories' ),
-  );  
+  );
 
   register_taxonomy( 'deeds', array( 'deed' ), array(
     'hierarchical' => true,
@@ -175,7 +175,7 @@ function add_organization_content_type() {
   );
 
   // Create an array for the $args
-  $args = array( 'labels' => $labels, 
+  $args = array( 'labels' => $labels,
     'public' => true,
     'publicly_queryable' => true,
     'show_ui' => true,
@@ -189,9 +189,9 @@ function add_organization_content_type() {
     'show_in_rest'       => true,
     'rest_base'          => 'organization-api',
   	'rest_controller_class' => 'WP_REST_Posts_Controller'
-  ); 
+  );
 
-  register_post_type( 'organization', $args ); 
+  register_post_type( 'organization', $args );
 }
 
 add_action( 'init', 'create_organization_taxonomies', 0 );
@@ -211,7 +211,7 @@ function create_organization_taxonomies() {
     'add_new_item'      => __( 'Add New Organization Category' ),
     'new_item_name'     => __( 'New Organization Category Name' ),
     'menu_name'         => __( 'Organization Categories' ),
-  );  
+  );
 
   register_taxonomy( 'organizations', array( 'organization' ), array(
     'hierarchical' => true,
