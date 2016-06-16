@@ -87,8 +87,8 @@ header {
 		list-style-type: none;
 		li {
 			a {
-				font-size: 2.3em;
-				margin: 2px 0;
+				font-size: 2.0em;
+				margin: 5px 0;
 			}
 			a:hover {
 				color: $primary-txt;
@@ -111,6 +111,11 @@ header {
 }
 
 /** PROJECTS ROW **/
+
+.searchinput {
+	width: 150px;;
+	border: 2px solid rgba(0,0,0,0.4);
+}
 
 article.projects{
 	padding:10px 0;
