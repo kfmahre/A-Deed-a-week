@@ -70,7 +70,8 @@ header {
 	background-color: $primary-900;
 	color: #ffffff;
 	h1 {
-		margin: 10px 0 10px 0;
+		margin: 10px 0 10px 5px;
+		float: left;
 		a {
 				color: $primary-txt;
 				opacity: 0.8;
@@ -85,14 +86,17 @@ header {
 		}
 	}
 	.bracelets {
+		float: left;
 		max-width: 100%;
 		border-radius: 50%;
+		margin: 0 5px 5px 0;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 	}
 }
 
 .header-title-row {
 	max-height: 250px;
+	display: inline;
 }
 
 .header_menu 	ul {
