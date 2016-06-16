@@ -24,6 +24,13 @@ $primary-bg: #E3F2FD;
 $font-stack: 'Open Sans', sans-serif;
 
 /** SITE WIDE **/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 	font: $font-stack;
 	background-color: $primary-900;
@@ -124,6 +131,7 @@ header {
 }
 
 .border-art {
+	margin:3px;
 	border: 5px $accent-color;
 	box-shadow: 2px 2px $primary-700;
 }
