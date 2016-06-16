@@ -85,18 +85,18 @@ header {
 				transition: all linear 0.2s;
 		}
 	}
-	.logo {
-		float: left;
-		max-width: 100%;
-		max-height: 100%;
-		border-radius: 50%;
-		margin: 0 5px 5px 0;
-	}
 }
 
 .header-title-row {
 	max-height: 250px;
 	display: inline;
+	overflow: hidden;
+		img {
+		float: left;
+		max-width: 100%;
+		border-radius: 50%;
+		margin: 0 5px 5px 0;
+	}
 }
 
 .header_menu 	ul {
