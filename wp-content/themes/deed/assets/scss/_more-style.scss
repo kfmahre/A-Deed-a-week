@@ -130,14 +130,11 @@ header {
 	border: 2px solid rgba(0,0,0,0.4);
 }
 
-.border-art {
+article.projects{
+	padding:10px 0;
 	margin:3px;
 	border: 5px $accent-color;
 	box-shadow: 2px 2px 2px $primary-700;
-}
-
-article.projects{
-	padding:10px 0;
 
 	span.date{
 		display:block;
