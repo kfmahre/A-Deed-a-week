@@ -1,12 +1,11 @@
 /*
-Theme Name: Level Up Child
+Theme Name: WpAngularJS
 Theme URI: http://www.roysivan.com/angular-wordpress-theme
 Description: Bringing AngularJS technology to WordPress. Theme front end is built using Twitter Bootstrap with some minor styling done by Roy Sivan. This theme is built to help build a Single Page Application using WordPress and AngularJS.
-Template: WpAngularJS
-Version: 0.1
+Version: 6.1
 Tags: WordPress, AngularJS, JavaScript, RESTful, API, Angular, Client Side Application, Single Page Application
-Author: Kyle Mahre
-Author URI: kfmahre.github.io
+Author: Roy Sivan
+Author URI: http://www.roysivan.com
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,27 +24,13 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 */
-@import url("http://roysivan.com/angular-wordpress-theme/wp-content/themes/Angular-Wordpress-Theme/style.css");
 
 /* HTML 5*/
-html {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-* { font-family: 'Open Sans', sans-serif; }
-
 header, article, footer, section, nav{
-	display:block;
+	display:block;	
 }
-
 .clear{
-	clear:both;
+	clear:both;	
 }
 
 
