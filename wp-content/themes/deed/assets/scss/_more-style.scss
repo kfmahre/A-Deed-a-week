@@ -94,6 +94,7 @@ header {
 		list-style-type: none;
 		li {
 			a {
+				text-shadow: 2px 2px 2px #212121;
 				font-size: 2.0em;
 				margin: 5px 0;
 			}
@@ -119,7 +120,7 @@ header {
 
 /** PROJECTS ROW **/
 .post-title {
-	opacity: 1;
+	opacity: 0.8;
 	color: $primary-700;
 	margin: 5px 0;
 }
@@ -129,9 +130,11 @@ header {
 	max-width: 25%;
 	min-width: 150px;;
 	border: 2px solid rgba(0,0,0,0.4);
+	@include box-shadow(0,0,20px,rgba(0,0,0,0.4))
 }
 
 article.projects{
+	width: 80%;
 	margin:10px 5px;
 	padding:10px;
 	border: 1px solid $primary-900;
@@ -143,6 +146,7 @@ article.projects{
 		font-style:italic;
 	}
 	a{
+		font-size: 2.1em;
 		text-decoration: none;
 
 		&.title{
@@ -151,7 +155,7 @@ article.projects{
 
 	}
 	p{
-		font-size: 1em;
+		font-size: 2em;
 	}
 	div.edit{
 		display:inline-block;
