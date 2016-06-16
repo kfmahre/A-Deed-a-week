@@ -46,14 +46,10 @@
 <header class="jumbotron container">
 		<div class="row">
 			<div class="col-sm-7">
-				<h1>
-					<a class="blog-name" href="/">
-						<?php echo bloginfo('name'); ?>
-					</a>
-				</h1>
-			</div>
-			<div class="col-sm-4 col-sm-offset-1">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="bracelets" alt="picture">
+				<h1>
+					<a class="blog-name" href="/"><?php echo bloginfo('name'); ?></a>
+				</h1>
 			</div>
 		</div>
 		<div class="row">
