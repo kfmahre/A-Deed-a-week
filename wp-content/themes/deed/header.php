@@ -43,9 +43,10 @@
 	<?php endif ?>
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
-<header class="row container">
+
+	<header class="row container">
 		<div class="row container logo-title-row col-sm-12">
-				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="logo" alt="picture">
+				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="img-responsive logo" alt="picture">
 				<h1 class="title"><?php echo bloginfo('name'); ?></h1>
 		</div>
 		<div class="row">
@@ -53,6 +54,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
 			</div>
 		</div>
-</header>
+	</header>
+
 <div class="container-fluid content-wrapper">
 	<div class="container">
