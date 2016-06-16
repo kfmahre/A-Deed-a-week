@@ -116,10 +116,16 @@ header {
 	margin: 5px 0;
 }
 .searchinput {
+	margin: 5px 0;
 	font-size: 1.9em;
 	max-width: 25%;
 	min-width: 150px;;
 	border: 2px solid rgba(0,0,0,0.4);
+}
+
+hr {
+	border: 5px $accent-color;
+	box-shadow: 2px 2px $primary-700;
 }
 
 article.projects{
