@@ -7,7 +7,8 @@
 		<meta name="author" content="Ciplex">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic' rel='stylesheet' type='text/css'>
 		<?php wp_head();?>
 		<!--[if lt IE 9]>
@@ -37,12 +38,12 @@
 			ga('require', 'displayfeatures');
 			ga('require', 'linkid');
 			ga('send', 'pageview');
-
 		</script>
 
 	<?php if(is_user_logged_in()) : ?>
 	<script>window.isLoggedIn = true;</script>
 	<?php endif ?>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body <?php body_class(); ?>>
 <header class="container">
@@ -55,7 +56,7 @@
 				</h1>
 			</div>
 			<div class="col-sm-4 col-sm-offset-1">
-				<img src="blog/bracelet300px.png" class="bracelets" alt="picture">
+				<img src="images/bracelet300px.png" class="bracelets" alt="picture">
 			</div>
 		</div>
 		<div class="row">
