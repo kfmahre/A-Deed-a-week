@@ -15,12 +15,12 @@
 }
 
 /** COLOR variables **/
-$primary: #e0e0e0;
+$primary: #3F51B5;
 $primary-txt: #ffffff;
 $primary-txt-dk: #000000;
-$primary-700: #424242;
-$primary-900: #212121;
-$accent-color: #FFAB00;
+$primary-700: #303F9F;
+$primary-900: #1A237E;
+$accent-color: #D50000;
 $primary-bg: #fafafa;
 $font-stack: 'Open Sans', sans-serif;
 /** Grey- for light backgrounds **/
@@ -79,8 +79,9 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: $primary;
+	background-color: $grey-300;
 	color: #ffffff;
+	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 }
 
 .logo-title-row {
@@ -137,7 +138,7 @@ header {
 
 /** CONTENT **/
 .content-wrapper{
-	background-color: $primary-bg;
+	background-color: $grey-300;
 	@include box-shadow(5,5,20px,rgba(0,0,0,0.4));
 	padding: 15px 0;
 	a { text-decoration: none; color: $primary-700;}
@@ -154,7 +155,7 @@ header {
 }
 
 article.deeds{
-	background-color: $grey-100;
+	background-color: #ffffff;
 	width: 80%;
 	margin:10px 5px;
 	padding:10px;
@@ -267,6 +268,8 @@ div.sidebar{
 
 /** COMMENTS **/
 
+
+
 article.comment{
 	span.author{
 		font-size:12px;
@@ -287,6 +290,6 @@ footer{
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	color:#FFF;
-	background-color: $primary;
+	background-color: $grey-50;
 }
 
