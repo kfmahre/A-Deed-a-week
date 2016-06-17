@@ -39,6 +39,14 @@ class angularjs_wp_theme {
 	/* THEME SUPPORT */
 	function add_awesome_theme_support(){
 
+$args = array(
+  'width'         => 100%,
+  'height'        => 500,
+  'default-image' => get_template_directory_uri() . '/images/header.jpg',
+  'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
+
 		add_theme_support( 'post-thumbnails' );
 		add_post_type_support( 'page', 'excerpt' );
 
