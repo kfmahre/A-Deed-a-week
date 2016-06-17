@@ -10,9 +10,16 @@ Author URI: kfmahre.github.io
 
 /* HTML 5*/
 
-*, *:before, *:after {
-  box-sizing: inherit;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 
 /******** ALL FURTHER STYLING SHOULD BE DONE IN THE more-style.less/css FILES *******/

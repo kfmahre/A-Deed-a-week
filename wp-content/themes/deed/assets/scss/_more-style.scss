@@ -24,9 +24,6 @@ $primary-bg: #E3F2FD;
 $font-stack: 'Open Sans', sans-serif;
 
 /** SITE WIDE **/
-html {
-  box-sizing: border-box;
-}
 
 body {
 	font: $font-stack;
@@ -75,13 +72,12 @@ header {
 	height: 250px;
 	width: 80%;
 	margin: 0 10%;
-	display: inline-block;
 	overflow: hidden;
 		img {
 		border-radius: 50%;
 		margin: 5px;
 		max-width: 100%;
-		height: auto;
+		max-height: 100%;
 		}
 		h1 {
 		margin: 10px 0 10px 5px;
