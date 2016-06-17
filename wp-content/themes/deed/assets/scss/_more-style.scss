@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: transparent;
+	background-color: $grey-300;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -153,6 +153,10 @@ header {
 	border: 1px solid transparent;
 	border-radius: 0;
 	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
+}
+
+.searchinput:focus {
+	outline: none;
 }
 
 article.deeds{
