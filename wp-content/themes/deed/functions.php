@@ -40,7 +40,7 @@ class angularjs_wp_theme {
 	function add_awesome_theme_support(){
 
 $args = array(
-  'width'         => 100%,
+  'width'         => 1260,
   'height'        => 500,
   'default-image' => get_template_directory_uri() . '/images/header.jpg',
   'uploads'       => true,
