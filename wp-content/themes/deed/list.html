@@ -10,10 +10,12 @@
 			<div class="row-fluid">
 				<article ng-repeat="post in posts | filter:postfilter" class="projects">
 					<h4>{{post.title.rendered}}</h4>
+					<hr>
 					<p ng-bind-html="post.excerpt.rendered | to_trusted"></p>
-					<a class="btn btn-primary btn-small" href="{{site + '#/deed/'+ post.id + '/' + post.slug}}">Read More >></a>
+					<a class="btn btn-primary btn-small" href="{{site + '#/deed/'+ post.id + '/' + post.slug}}">Read More</a>
 					<!-- EDIT -->
 					<form ng-show="is_admin" class="form-inline edit">
+						<hr>
 						<div class="form-group">
 							<button ng-click="deletePost($index, post)" class="btn btn-primary btn-mini form-control">Delete</button>
 							<button ng-click="editPost(post)" data-toggle="modal" data-target="#save" class="btn btn-primary btn-mini form-control">Edit</button>
