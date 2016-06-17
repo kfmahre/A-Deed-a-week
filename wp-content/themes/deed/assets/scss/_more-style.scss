@@ -208,16 +208,16 @@ article.deeds{
 }
 
 .btn.btn-primary:hover {
-	color: $primary-txt-dk;
-	border-color: $primary-txt-dk;
-	background-color: $primary-700;
+	color: $primary-900;
+	border-color: $primary-900;
+	background-color: transparent;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:active {
 	background-color: transparent;
-	color: $primary-txt-dk;
-	border-color: $primary-txt-dk;
+	color: $primary-txt;
+	border-color: $primary-900;
 	transition: all linear 0.2s;
 }
 
