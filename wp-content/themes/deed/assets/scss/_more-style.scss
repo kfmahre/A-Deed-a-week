@@ -78,7 +78,7 @@ hr {
 /** HEADER **/
 header {
 	width: 100%;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	background-color: $grey-300;
 	color: #ffffff;
@@ -86,8 +86,8 @@ header {
 
 .logo-title-row {
 	height: 250px;
-	width: 80%;
-	margin: 0 10%;
+	width: 100%;
+	margin: auto;
 	display:inline;
 	overflow: hidden;
 		.logo {
