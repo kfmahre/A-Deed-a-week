@@ -15,11 +15,11 @@
 }
 
 /** COLOR variables **/
-$primary: #3F51B5;
+$primary: #607D8B;
 $primary-txt: #ffffff;
 $primary-txt-dk: #000000;
-$primary-700: #303F9F;
-$primary-900: #1A237E;
+$primary-700: #455A64;
+$primary-900: #263238;
 $accent-color: #D50000;
 $primary-bg: #fafafa;
 $font-stack: 'Open Sans', sans-serif;
@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $grey-300;
+	background-color: $primary;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -63,6 +63,7 @@ p { font-size: 1.1em; }
 
 hr {
 	border: 1px solid $primary;
+	text-shadow: 2px 2px 5px $grey-900;
 }
 
 .mce-menubar.mce-toolbar { display: none; }
@@ -80,7 +81,7 @@ header {
 	width: 100%;
 	margin: auto;
 	padding: 0;
-	background-color: $grey-300;
+	background-color: transparent;
 	color: #ffffff;
 }
 
