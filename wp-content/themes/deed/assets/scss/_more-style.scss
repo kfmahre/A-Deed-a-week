@@ -15,12 +15,13 @@
 }
 
 /** COLOR variables **/
-$primary: #9E9E9E;
+$primary: #607D8B;
 $primary-txt: #ffffff;
-$primary-700: #616161;
-$primary-900: #424242;
-$accent-color: #00B0FF;
-$primary-bg: #F5F5F5;
+$primary-txt-dk: #000000;
+$primary-700: #455A64;
+$primary-900: #263238;
+$accent-color: #536DFE;
+$primary-bg: #ECEFF1;
 $font-stack: 'Open Sans', sans-serif;
 
 /** SITE WIDE **/
@@ -111,7 +112,7 @@ header {
 				border-radius: 4px;
 				white-space: nowrap;
 				line-height: 200%;
-				box-shadow: 2px 2px 5px $accent-color;
+				box-shadow: 2px 2px 5px $primary-700;
 			}
 			a:hover {
 				background-color: $accent-color;
@@ -135,7 +136,7 @@ header {
 	font-size: 1.9em;
 	border: 2px solid rgba(0,0,0,0.4);
 	border-radius: 4px;
-	box-shadow: 2px 2px 5px $accent-color;
+	box-shadow: 2px 2px 5px $primary-700;
 }
 
 article.projects{
@@ -144,7 +145,7 @@ article.projects{
 	padding:10px;
 	border: 1px solid $primary-900;
 	border-radius: 4px;
-	box-shadow: 2px 2px 5px $accent-color;
+	box-shadow: 2px 2px 5px $primary-700;
 
 	span.date{
 		display:block;
@@ -172,7 +173,7 @@ article.projects{
 /** Buttons **/
 
 .btn.btn-primary {
-	background-color: $primary;
+	background-color: $accent-color;
 	color: #ffffff;
 	border-color: #ffffff;
 	border-radius: 4px;
@@ -180,16 +181,16 @@ article.projects{
 }
 
 .btn.btn-primary:hover {
-	background-color: $accent-color;;
-	color: #ffffff;
-	border-color: #ffffff;
+	color: #000000;
+	border-color: #000000;
+	background-color: transparent;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:active {
-	background-color: transparent;
-	color: #ffffff;
-	border-color: #ffffff;
+	background-color: $accent-color;
+	color: #000000;
+	border-color: #000000;
 	transition: all linear 0.2s;
 }
 
