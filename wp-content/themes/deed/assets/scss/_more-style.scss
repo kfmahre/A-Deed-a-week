@@ -20,7 +20,7 @@ $primary-txt: #ffffff;
 $primary-txt-dk: #000000;
 $primary-700: #455A64;
 $primary-900: #263238;
-$accent-color: #536DFE;
+$accent-color: #00B8D4;
 $primary-bg: #ECEFF1;
 $font-stack: 'Open Sans', sans-serif;
 
@@ -113,7 +113,6 @@ header {
 				border-radius: 4px;
 				white-space: nowrap;
 				line-height: 200%;
-				box-shadow: 2px 2px 5px $primary-700;
 			}
 			a:hover {
 				background-color: $accent-color;
