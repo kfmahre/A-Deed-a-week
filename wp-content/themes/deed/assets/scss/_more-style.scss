@@ -38,7 +38,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { font-weight: 600; text-shadow: 2px 2px 5px $primary-700; opacity: 0.90;
+h1,h2,h3,h4,h5,h6 { font-weight: 600; text-shadow: 2px 2px 5px $primary-700; opacity: 0.85;
 	margin:0;
 	padding:0;
 }
@@ -49,6 +49,12 @@ h3 { font-size: 2.3em; }
 h4 { font-size: 1.9em; }
 h5 { font-size: 1.5em; }
 h6 { font-size: 1.1em; }
+
+p { font-size: 1.1em; }
+
+hr {
+	border: 1px solid $primary;
+}
 
 .mce-menubar.mce-toolbar { display: none; }
 
@@ -174,23 +180,22 @@ article.projects{
 
 .btn.btn-primary {
 	background-color: $accent-color;
-	color: #ffffff;
-	border-color: #ffffff;
-	border-radius: 4px;
+	color: $primary-txt;
+	border-color: $primary-txt;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:hover {
-	color: #000000;
-	border-color: #000000;
+	color: $primary-txt-dk;
+	border-color: $primary-txt-dk;
 	background-color: transparent;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:active {
 	background-color: $accent-color;
-	color: #000000;
-	border-color: #000000;
+	color: $primary-txt-dk;
+	border-color: $primary-txt-dk;
 	transition: all linear 0.2s;
 }
 
