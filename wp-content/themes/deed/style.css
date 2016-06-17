@@ -9,11 +9,9 @@ Author URI: kfmahre.github.io
 */
 
 /* HTML 5*/
-header, article, footer, section, nav{
-	display:block;
-}
-.clear{
-	clear:both;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 

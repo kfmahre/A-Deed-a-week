@@ -28,10 +28,6 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
 	font: $font-stack;
 	background-color: $primary-900;
