@@ -8,7 +8,7 @@
 				<input ng-model="postfilter" placeholder="Search..." class="form-control searchinput" id="searchInput">
 			</div>
 			<div class="row-fluid">
-				<article ng-repeat="post in posts | filter:postfilter" class="projects">
+				<article ng-repeat="post in posts | filter:postfilter" class="deeds">
 					<h3>{{post.title.rendered}}</h3>
 					<hr>
 					<p ng-bind-html="post.excerpt.rendered | to_trusted"></p>
