@@ -96,7 +96,6 @@ header {
 	list-style-type: none;
 	li {
 			display: inline;
-			margin: 1px;
 		a {
 				font-size: 2.0em;
 				margin: 15px 5px;
@@ -110,6 +109,7 @@ header {
 				-moz-border-radius: 0;
 				border-radius: 0;
 				white-space: nowrap;
+				line-height: 150%;
 			}
 			a:hover {
 				background-color: $accent-color;
