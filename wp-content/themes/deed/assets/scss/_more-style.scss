@@ -75,11 +75,14 @@ header {
 	display:inline;
 	overflow: hidden;
 		.logo {
+		display: inline;
+		height: auto;
 		border-radius: 50%;
 		margin: 5px;
 		width: calc(100%/4)px;
 		}
 		.title {
+		display: inline;
 		margin: 10px 0 10px 5px;
 		}
 }
