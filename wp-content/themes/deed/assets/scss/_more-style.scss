@@ -88,11 +88,6 @@ header {
 		}
 }
 
-.lightbox {
-   background: white;
-   border: 5px solid rgba(0, 0, 0, 0.5);
-}
-
 .header_menu 	ul {
 	list-style-type: none;
 	li {
@@ -100,10 +95,19 @@ header {
 				text-shadow: 2px 2px 2px #212121;
 				font-size: 2.0em;
 				margin: 5px 5px;
+				background-color: transparent;
+				color: #ffffff;
+				border-color: #ffffff;
+				border-radius: 4px;
+				transition: all linear 0.2s;
 			}
 			a:hover {
 				color: $primary-txt;
 				font-style: italic;
+				background-color: $accent-color;;
+				color: #ffffff;
+				border-color: #ffffff;
+				transition: all linear 0.2s;
 			}
 		}
 }
