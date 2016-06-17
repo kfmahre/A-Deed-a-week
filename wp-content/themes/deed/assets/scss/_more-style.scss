@@ -47,7 +47,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 600; text-shadow: 2px 2px 5px $grey-900; opacity: 0.85;
+h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 600; text-shadow: 2px 2px 5px $primary-700; opacity: 0.85;
 	margin:0;
 	padding:0;
 }
@@ -135,7 +135,7 @@ header {
 				line-height: 200%;
 			}
 			a:hover {
-				background-color: $accent-color;
+				background-color: $primary-900;
 				transition: all linear 0.2s;
 			}
 		}
