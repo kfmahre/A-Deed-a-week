@@ -23,6 +23,14 @@ $primary-900: #263238;
 $accent-color: #B71C1C;
 $primary-bg: #ECEFF1;
 $font-stack: 'Open Sans', sans-serif;
+/** Grey- for light backgrounds **/
+$grey-300: #e0e0e0;
+$grey-100: #f5f5f5;
+$grey-50: #fafafa;
+/** Grey- for dark backgrounds **/
+$grey-900: #212121;
+$grey: #303030;
+$grey-800: #424242;
 
 /** SITE WIDE **/
 
@@ -130,7 +138,7 @@ header {
 /** CONTENT **/
 .content-wrapper{
 	background-color: $primary-bg;
-	@include box-shadow(0,0,20px,rgba(0,0,0,0.4));
+	@include box-shadow(5,5,20px,rgba(0,0,0,0.4));
 	padding: 15px 0;
 	a { text-decoration: none; color: $primary-700;}
 	a:hover { text-decoration: none; color: $accent-color; }
@@ -150,8 +158,7 @@ article.projects{
 	margin:10px 5px;
 	padding:10px;
 	border: 1px solid $primary-900;
-	border-radius: 4px;
-	box-shadow: 2px 2px 5px $primary-700;
+	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 
 	span.date{
 		display:block;
