@@ -36,7 +36,8 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $primary;
+	background-color: transparent;
+	width: 100%;
 	color: #000000;
 	margin:0;
 	padding:0;
@@ -46,7 +47,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $accent-color; font-weight: 600; text-shadow: 2px 2px 5px $primary-900; opacity: 0.85;
+h1,h2,h3,h4,h5,h6 { color: $accent-color; font-weight: 600; text-shadow: 2px 2px 5px $grey-900; opacity: 0.85;
 	margin:0;
 	padding:0;
 }
@@ -138,7 +139,7 @@ header {
 
 /** CONTENT **/
 .content-wrapper{
-	background-color: $grey-300;
+	background-color: $grey-100;
 	@include box-shadow(5,5,20px,rgba(0,0,0,0.4));
 	padding: 15px 0;
 	a { text-decoration: none; color: $primary-700;}
@@ -150,16 +151,16 @@ header {
 .searchinput {
 	font-size: 1.9em;
 	border: 2px solid rgba(0,0,0,0.4);
-	border-radius: 4px;
-	box-shadow: 2px 2px 5px $primary-700;
+	border-radius: 0;
+	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 }
 
 article.deeds{
-	background-color: #ffffff;
+	background-color: $grey-50;
 	width: 80%;
 	margin:10px 5px;
 	padding:10px;
-	border: 1px solid $primary-900;
+	border: 1px solid transparent;
 	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 
 	span.date{
