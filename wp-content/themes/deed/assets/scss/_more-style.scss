@@ -88,9 +88,14 @@ header {
 		}
 }
 
-.header_menu 	ul {
+.header_menu {
+	width: 100%;
+}
+
+.header_menu ul {
 	list-style-type: none;
 	li {
+			display: inline;
 		a {
 				font-size: 2.0em;
 				margin: 5px 5px;
@@ -103,17 +108,13 @@ header {
 				-webkit-border-radius: 0;
 				-moz-border-radius: 0;
 				border-radius: 0;
-				line-break: strict;
+				white-space: nowrap;
 			}
 			a:hover {
 				background-color: $accent-color;
 				transition: all linear 0.2s;
 			}
 		}
-}
-
-.header_menu li {
-	display: inline;
 }
 
 /** CONTENT **/
