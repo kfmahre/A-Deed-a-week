@@ -27,7 +27,7 @@ $font-stack: 'Open Sans', sans-serif;
 /** SITE WIDE **/
 
 body {
-	font: $font-stack;
+	font-family: $font-stack;
 	background-color: $primary-900;
 	color: #000000;
 	margin:0;
@@ -84,6 +84,7 @@ header {
 		opacity: 0.9;
 		}
 		.title {
+		white-space: nowrap;
 		font-size: 4em;
 		display: inline;
 		margin: 10px 0 10px 5px;
