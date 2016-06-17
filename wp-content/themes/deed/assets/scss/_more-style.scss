@@ -100,6 +100,7 @@ header {
 				border: 1px solid $primary-txt;
 				border-radius: 4px;
 				transition: all linear 0.2s;
+				white-space: pre-wrap;
 			}
 			a:hover {
 				color: $primary-txt;
