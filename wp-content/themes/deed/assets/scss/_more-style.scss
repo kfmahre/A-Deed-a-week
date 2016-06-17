@@ -180,7 +180,7 @@ article.projects{
 
 /** Buttons **/
 
-.btn.btn-primary.btn-small {
+.btn.btn-primary {
 	background-color: $primary;
 	color: #ffffff;
 	border-color: #ffffff;
@@ -188,14 +188,14 @@ article.projects{
 	transition: all linear 0.2s;
 }
 
-.btn.btn-primary.btn-small:hover {
+.btn.btn-primary:hover {
 	background-color: $accent-color;;
 	color: #ffffff;
 	border-color: #ffffff;
 	transition: all linear 0.2s;
 }
 
-.btn.btn-primary.btn-small:active {
+.btn.btn-primary:active {
 	background-color: transparent;
 	color: #ffffff;
 	border-color: #ffffff;
