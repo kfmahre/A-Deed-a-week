@@ -15,13 +15,13 @@
 }
 
 /** COLOR variables **/
-$primary: #607D8B;
+$primary: #000000;
 $primary-txt: #ffffff;
 $primary-txt-dk: #000000;
-$primary-700: #455A64;
-$primary-900: #263238;
-$accent-color: #DD2C00;
-$primary-bg: #ECEFF1;
+$primary-700: #303030;
+$primary-900: #212121;
+$accent-color: #FFAB00;
+$primary-bg: #424242;
 $font-stack: 'Open Sans', sans-serif;
 /** Grey- for light backgrounds **/
 $grey-300: #e0e0e0;
@@ -286,6 +286,6 @@ footer{
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	color:#FFF;
-	background-color: $primary-900;
+	background-color: $primary;
 }
 
