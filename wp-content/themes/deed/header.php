@@ -47,7 +47,10 @@
 <body class="conatiner-fluid" <?php body_class(); ?>>
 
 	<header class="container" id="header">
-
+		<div id="header-img">
+    <?php if ( get_header_image() ) : ?>
+      <img src="<?php header_image(); ?>" class="header-image" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+    <?php endif; ?>
 			<div class="row logo-title-row">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="logo" alt="picture">
 				<h1 class="title"><?php echo bloginfo('name'); ?></h1>
@@ -57,10 +60,8 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
 				</div>
 			</div>
+		</div>
 
-    <?php if ( get_header_image() ) : ?>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a>
-    <?php endif; ?>
 	</header><!-- #masthead -->
 
 <div id="main" class="container-fluid content-wrapper">
