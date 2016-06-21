@@ -82,22 +82,15 @@ hr {
 
 /** HEADER **/
 
-#header {
+header {
 	color: #ffffff;
 	width: 100%;
 	margin: auto;
 	padding: 0;
-}
-
-#header-img {
-	background: url(.header-image) no-repeat bottom center;
-}
-
-.header-image {
-
-  margin: 0;
-  width: 1260px;
-  height: 500px;
+	background: url(/images/header.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center center;
 }
 
 .logo-title-row {
