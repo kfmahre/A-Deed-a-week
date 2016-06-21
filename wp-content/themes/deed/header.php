@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic' rel='stylesheet' type='text/css'>
-		<?php wp_head();?>
+
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -41,17 +41,21 @@
 	<?php if(is_user_logged_in()) : ?>
 	<script>window.isLoggedIn = true;</script>
 	<?php endif ?>
+
+	<?php wp_head();?>
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
 
-	<header class="container">
-		<div class="row logo-title-row">
+	<header class="container" id="header">
+		<div id="headerimg">
+			<div class="row logo-title-row">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="logo" alt="picture">
 				<h1 class="title"><?php echo bloginfo('name'); ?></h1>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
+				</div>
 			</div>
 		</div>
 	</header>

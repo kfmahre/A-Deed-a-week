@@ -89,6 +89,17 @@ header {
 	color: #ffffff;
 }
 
+#header {
+  background: url("<?php bloginfo('stylesheet_directory'); ?>/images/wc_header.jpg")
+  no-repeat bottom center;
+}
+
+#headerimg  {
+  margin: 7px 9px 0;
+  height: 192px;
+  width: 740px;
+}
+
 .logo-title-row {
 	height: 250px;
 	width: 100%;
