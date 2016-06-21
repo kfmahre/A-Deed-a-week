@@ -81,20 +81,17 @@ hr {
 }
 
 /** HEADER **/
-header {
+
+#header {
+	color: #ffffff;
 	width: 100%;
 	margin: auto;
 	padding: 0;
-	background-color: transparent;
-	color: #ffffff;
-}
-
-#header {
   background: url("<?php bloginfo('stylesheet_directory'); ?>/images/wc_header.jpg")
   no-repeat bottom center;
 }
 
-#headerimg  {
+#headerimg {
   margin: 7px 9px 0;
   height: 192px;
   width: 740px;
