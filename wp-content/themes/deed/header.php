@@ -43,7 +43,7 @@
 
 	<?php wp_head();?>
 </head>
-<body class="container" <?php body_class(); ?>>
+<body class="container-fluid" <?php body_class(); ?>>
 
 	<header id="masthead" class="container" role="banner">
 
