@@ -51,7 +51,7 @@
         $header_image = esc_url( get_header_image() );
 
         if( !empty( $header_image ) ){
-            echo '<div class="parallax" style="background-image: url(' . esc_url( $header_image ) . ');">';
+            echo '<div class="header-img" style="background-image: url(' . esc_url( $header_image ) . ');">';
             echo '<img src="' . esc_url( $header_image ) . '" alt="' . esc_attr( $blog_title . ' - ' . $blog_description ) . '">';
             echo '</div>';
         }
