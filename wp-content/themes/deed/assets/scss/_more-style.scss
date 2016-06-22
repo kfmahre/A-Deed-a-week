@@ -15,12 +15,12 @@
 }
 
 /** COLOR variables **/
-$primary: #607D8B;
+$primary: #f44336;
 $primary-txt: #ffffff;
 $primary-txt-dk: #000000;
-$primary-700: #455A64;
-$primary-900: #263238;
-$accent-color: #D50000;
+$primary-700: #d32f2f;
+$primary-900: #b71c1c;
+$accent-color: #2962ff;
 $primary-bg: #fafafa;
 $font-stack: 'Open Sans', sans-serif;
 /** Grey- for light backgrounds **/
@@ -47,7 +47,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 600; text-shadow: 2px 2px 5px $primary-700; opacity: 0.85;
+h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 600; text-shadow: 2px 2px 5px $grey-900; opacity: 0.85;
 	margin:0;
 	padding:0;
 }
@@ -87,9 +87,8 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position: center center;
+	border: 5px solid transparent;
+	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 }
 
 .header-img img {
