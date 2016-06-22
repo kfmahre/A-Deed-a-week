@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $primary;
+	background-color: $grey;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -94,6 +94,7 @@ header {
 
 .header-img img {
 	width: 100%;
+	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 }
 
 .logo-title-row {
@@ -156,7 +157,7 @@ header {
 	a { text-decoration: none; color: $primary-700;}
 	a:hover { text-decoration: none; color: $accent-color; }
 	a:active:visited { text-decoration: none; color: $primary-700; }
-		@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
+	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 }
 
 /** PROJECTS ROW **/
