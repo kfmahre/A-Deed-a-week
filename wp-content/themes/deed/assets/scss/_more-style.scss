@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $grey;
+	background-color: $grey-300;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -161,8 +161,9 @@ header {
 
 /** PROJECTS ROW **/
 .searchinput {
+	padding:10px;
 	font-size: 1.9em;
-	border: 1px solid transparent;
+	border: 5px solid transparent;
 	border-radius: 0;
 	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 }
@@ -173,13 +174,13 @@ header {
 
 article.deeds{
 	background-color: $grey-50;
-	width: 80%;
+	width: 90%;
 	margin:10px 5px;
 	padding:10px;
-	border-top: 1px solid $grey-50;
-	border-left: 1px solid $grey-50;
-	border-right: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+	border-top: 5px solid $grey-50;
+	border-left: 5px solid $grey-50;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
 	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 
 	span.date{
