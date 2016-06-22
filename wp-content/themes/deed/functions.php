@@ -39,14 +39,23 @@ class angularjs_wp_theme {
 	/* THEME SUPPORT */
 	function add_awesome_theme_support(){
 
+  register_default_headers( array(
+    'mypic' => array(
+    'url'   => get_template_directory_uri() . '/images/header.png',
+    'thumbnail_url' => get_template_directory_uri() . '/images/header-thumb.png',
+    'description'   => _x( 'MyPic', 'header image description', 'yourtheme' )),
+  ));
+
+
   $args = array(
     'flex-width'    => true,
     'width'         => 980,
     'flex-height'    => true,
-    'height'        => 490,
+    'height'        => 200,
     'default-image' => get_template_directory_uri() . '/images/header.jpg',
   );
   add_theme_support( 'custom-header', $args );
+
 
 		add_theme_support( 'post-thumbnails' );
 		add_post_type_support( 'page', 'excerpt' );

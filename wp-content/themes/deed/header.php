@@ -1,29 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> ng-app="wpAngularTheme">
 <head>
-		<meta charset="<?php bloginfo( 'charset' ); ?>" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		<meta name="author" content="Ciplex">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic' rel='stylesheet' type='text/css'>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<meta name="author" content="Ciplex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic' rel='stylesheet' type='text/css'>
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<?php // Facebook code ?>
-		<script>
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1732805993602261&version=v2.0";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		window.isLoggedIn = false;
-	</script>
+			<script>
+				(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1732805993602261&version=v2.0";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				window.isLoggedIn = false;
+			</script>
 		<?php // end facebook ?>
 
 		<script>
@@ -46,21 +45,21 @@
 </head>
 <body class="conatiner-fluid" <?php body_class(); ?>>
 
-	<header class="container">
+	<header id="masthead" class="container" role="banner">
 
     <?php if ( get_header_image() ) : ?>
-      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="header image" />
+      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="header image" id="headerImg"/>
     <?php endif; ?>
 			<div class="row logo-title-row">
 				<img src="http://dev-a-deed-a-week.pantheonsite.io/wp-content/themes/deed/build/images/bracelet300px.png" class="logo" alt="picture">
 				<h1 class="title"><?php echo bloginfo('name'); ?></h1>
 			</div>
-			<div class="row">
+			<nav class="row">
 				<div class="col-sm-12">
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu',  'container_class' => 'header_menu' ) ); ?>
 				</div>
+			</nav>
 
-		</div>
 
 	</header><!-- #masthead -->
 
