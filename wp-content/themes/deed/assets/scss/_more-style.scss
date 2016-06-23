@@ -177,7 +177,7 @@ header {
 }
 
 /** PROJECTS ROW **/
-#searchinput {
+#searchInput {
 	width: 100%;
 	margin: 0 5px;
 	padding:10px 10px;
@@ -187,7 +187,7 @@ header {
 	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
-#searchinput:focus {
+#searchInput:focus {
 	outline: none;
 }
 
