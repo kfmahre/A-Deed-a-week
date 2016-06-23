@@ -48,7 +48,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 300; text-shadow: 2px 2px 4px $grey-800; opacity: 0.90;
+h1,h2,h3,h4,h5,h6 { color: $accent-color; font-weight: 300; text-shadow: 2px 2px 4px $grey-800; opacity: 0.90;
 	margin:0;
 	padding:0;
 }
@@ -93,8 +93,8 @@ header {
 	margin: 0 0 10px 0;
 	padding: 0;
 	border: 5px solid transparent;
-	background: $grey-300;
-	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
+	background: $grey-800;
+	@include box-shadow(5px,5px,15px,rgba(0,0,0,0.4));
 	z-index: 5;
 }
 
@@ -157,7 +157,7 @@ header {
 
 /** CONTENT **/
 .content-wrapper{
-	background-color: $grey-300;
+	background-color: transparent;
 	margin: 15px 0;
 	a { text-decoration: none; color: $primary-700;}
 	a:hover { text-decoration: none; color: $accent-color; }
@@ -168,12 +168,13 @@ header {
 	z-index: 5;
 	background-color: $grey-50;
 	border: 1px solid transparent;
-	@include box-shadow(5px,5px,20px,rgba(0,0,0,0.4));
+	@include box-shadow(5px,5px,15px,rgba(0,0,0,0.4));
 }
 
 /** PROJECTS ROW **/
 .searchinput {
-	padding:10px;
+	margin: 0 5px;
+	padding:10px 0;
 	font-size: 1.9em;
 	border: 5px solid transparent;
 	border-radius: 0;
@@ -228,14 +229,14 @@ article.deeds{
 }
 
 .btn.btn-primary:hover {
-	color: $primary-900;
+	color: $primary-txt;
 	border-color: $primary-900;
-	background-color: transparent;
+	background-color: $accent-color;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:active {
-	background-color: transparent;
+	background-color: $accent-color;
 	color: $primary-txt;
 	border-color: $primary-900;
 	transition: all linear 0.2s;
@@ -322,7 +323,7 @@ article.comment{
 footer {
 	width: 100%;
 	margin: 10px 0 0 0;
-	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
+	@include box-shadow-inset(5px,5px,15px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	background-color: $grey-50;
 	color: $primary-txt-dk;
