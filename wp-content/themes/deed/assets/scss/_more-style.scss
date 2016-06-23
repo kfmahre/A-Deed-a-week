@@ -316,9 +316,12 @@ article.comment{
 
 footer {
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
-	padding:20px 0;
+	padding:20px 5px;
 	background-color: $grey-100;
-	color: $primary;
+	color: $primary-txt-dk;
+	h4 {
+		font-weight: 300;
+	}
 	ul {
 	list-style-type: none;
 		li {
@@ -328,10 +331,9 @@ footer {
 				color: $primary-txt-dk;
 				transition: all linear 0.2s;
 				text-align: center;
-				white-space: nowrap;
 			}
 			a:hover {
-				color: $primary-900;
+				color: $accent-color;
 				transition: all linear 0.2s;
 			}
 		}

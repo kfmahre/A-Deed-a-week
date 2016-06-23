@@ -11,7 +11,7 @@
 						</div>
 					</nav>
 					<div class="row">
-							<h4 class="extra-margin"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
+							<h4 class="extra-padding"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
 					</div>
 
 		</footer>
