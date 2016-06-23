@@ -319,8 +319,14 @@ footer {
 	padding:20px 5px;
 	background-color: $grey-100;
 	color: $primary-txt-dk;
-	h4 {
+	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
+		a {
+			color: $primary-900;
+		}
+		a:hover {
+			color: $accent-color;
+		}
 	}
 	ul {
 	list-style-type: none;
