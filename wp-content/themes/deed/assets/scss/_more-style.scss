@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $grey-300;
+	background-color: $grey-100;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -93,7 +93,7 @@ header {
 	margin: 0 0 10px 0;
 	padding: 0;
 	border: 5px solid transparent;
-	background: $grey;
+	background: $grey-300;
 	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
 	z-index: 5;
 }
@@ -166,7 +166,7 @@ header {
 
 .floating-middle {
 	z-index: 5;
-	background-color: $grey-100;
+	background-color: $grey-50;
 	border: 1px solid transparent;
 	@include box-shadow(5px,5px,20px,rgba(0,0,0,0.4));
 }
@@ -185,7 +185,7 @@ header {
 }
 
 article.deeds{
-	background-color: $grey-50;
+	background-color: white;
 	width: 90%;
 	margin:10px 5px;
 	padding:10px;
@@ -324,7 +324,7 @@ footer {
 	margin: 10px 0 0 0;
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
-	background-color: $grey-100;
+	background-color: $grey-50;
 	color: $primary-txt-dk;
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
