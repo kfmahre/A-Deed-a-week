@@ -48,7 +48,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $primary; font-weight: 300; text-shadow: 2px 2px 4px $grey-800;
+h1,h2,h3,h4,h5,h6 { color: $primary; font-weight: 300; text-shadow: 1px 2px 4px $grey-800;
 	margin:0;
 	padding:0;
 }
@@ -68,7 +68,7 @@ p { font-size: 1.1em; }
 
 hr {
 	border: 1px solid $accent-color;
-	box-shadow: 2px 2px 4px $grey-800;
+	box-shadow: 1px 2px 4px $grey-800;
 }
 
 *:focus {
@@ -94,13 +94,13 @@ header {
 	padding: 0;
 	border: 5px solid transparent;
 	background: $grey-800;
-	@include box-shadow(5px,5px,15px,rgba(0,0,0,0.4));
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 	z-index: 5;
 }
 
 .header-img img {
 	width: 100%;
-	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
 .logo-title-row {
@@ -168,7 +168,7 @@ header {
 	z-index: 5;
 	background-color: $grey-50;
 	border: 1px solid transparent;
-	@include box-shadow(5px,5px,15px,rgba(0,0,0,0.4));
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
 /** PROJECTS ROW **/
@@ -178,7 +178,7 @@ header {
 	font-size: 1.9em;
 	border: 5px solid transparent;
 	border-radius: 0;
-	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
 .searchinput:focus {
@@ -194,7 +194,7 @@ article.deeds{
 	border-left: 5px solid $grey-50;
 	border-right: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	@include box-shadow(5px,5px,10px,rgba(0,0,0,0.4));
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 
 	span.date{
 		display:block;
@@ -222,16 +222,16 @@ article.deeds{
 /** Buttons **/
 
 .btn.btn-primary {
-	background-color: $accent-color;
-	color: $primary-txt;
-	border-color: $primary-txt;
+	background-color: transparent;
+	color: $accent-color;
+	border-color: $accent-color;
 	transition: all linear 0.2s;
 }
 
 .btn.btn-primary:hover {
 	color: $primary-txt;
 	border-color: $primary-txt;
-	background-color: $primary;
+	background-color: $accent-color;
 	transition: all linear 0.2s;
 }
 
@@ -323,7 +323,7 @@ article.comment{
 footer {
 	width: 100%;
 	margin: 10px 0 0 0;
-	@include box-shadow-inset(5px,5px,15px,rgba(0,0,0,0.4));
+	@include box-shadow-inset(1px,5px,10px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	background-color: $grey-50;
 	color: $primary-txt-dk;
