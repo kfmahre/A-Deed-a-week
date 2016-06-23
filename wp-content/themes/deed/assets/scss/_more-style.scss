@@ -315,8 +315,12 @@ article.comment{
 /** FOOTER **/
 
 footer {
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 0;
+	border: 5px solid transparent;
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
-	padding:20px 5px;
+	padding:20px 0;
 	background-color: $grey-100;
 	color: $primary-txt-dk;
 	h1, h2, h3, h4, h5, h6 {

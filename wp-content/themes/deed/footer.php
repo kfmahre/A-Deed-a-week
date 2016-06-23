@@ -2,7 +2,7 @@
 		</div><!-- END FLUID CONTAINER -->
 
 
-		<footer class="container-fluid">
+		<footer class="container">
 
 
 					<nav class="row">
