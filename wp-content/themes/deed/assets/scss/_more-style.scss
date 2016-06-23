@@ -318,24 +318,22 @@ footer {
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
 	background-color: $grey-100;
-}
-
-footer ul {
+	color: $primary;
+	ul {
 	list-style-type: none;
-	li {
+		li {
 			display: inline;
-		a {
+			a {
 				font-size: 1.0em;
-				background-color: transparent;
-				color: $primary;
+				color: $primary-txt-dk;
 				transition: all linear 0.2s;
 				text-align: center;
 				white-space: nowrap;
 			}
 			a:hover {
-				background-color: $primary-900;
+				color: $primary-900;
 				transition: all linear 0.2s;
 			}
 		}
+	}
 }
-
