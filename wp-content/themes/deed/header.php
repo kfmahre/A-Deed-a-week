@@ -45,7 +45,7 @@
 </head>
 <body class="container-fluid" <?php body_class(); ?>>
 
-	<header id="masthead" class="container" role="banner">
+	<header class="container">
 
     <?php
         $header_image = esc_url( get_header_image() );
