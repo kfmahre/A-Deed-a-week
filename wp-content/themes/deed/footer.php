@@ -6,14 +6,12 @@
 
 
 					<nav class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-12 footer_menu">
 							<?php wp_nav_menu( array( 'theme_location' => 'footer-menu',  'container_class' => 'footer_menu' ) ); ?>
 						</div>
 					</nav>
 					<div class="row">
-						<span>
-							<h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
-						</span>
+							<h4 class="extra-margin"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
 					</div>
 
 		</footer>
