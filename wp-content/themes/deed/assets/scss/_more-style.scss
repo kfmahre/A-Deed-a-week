@@ -41,7 +41,6 @@ body {
 	color: #000000;
 	margin:0;
 	padding:0;
-	border: 5px solid transparent;
 }
 
 a { text-decoration: none; color: $primary-txt;}
@@ -190,10 +189,10 @@ header {
 }
 
 #searchInput:focus {
-	border-top: 5px solid $grey;
-	border-left: 5px solid $grey;
-	border-right: 5px solid $grey;
-	border-bottom: 5px solid $grey;
+	border-top: 5px solid $grey-300;
+	border-left: 5px solid $grey-300;
+	border-right: 5px solid $grey-300;
+	border-bottom: 5px solid $grey-300;
 	outline: none;
 	@include box-shadow(1px,5px,15px,rgba(0,0,0,0.4));
 }
@@ -346,10 +345,7 @@ footer {
 	padding:20px 0;
 	background-color: $grey-50;
 	color: $primary-txt-dk;
-	border-top: 5px solid $grey-300;
-	border-left: 5px solid $grey-300;
-	border-right: 5px solid $grey-100;
-	border-bottom: 0;
+	border: 5px 5px 0 5px solid transparent;
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		a {
