@@ -48,7 +48,7 @@ a { text-decoration: none; color: $primary-txt;}
 a:hover { text-decoration: none; color: $accent-color; }
 a:active:visited { text-decoration: none; color: #ffffff; }
 
-h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 300; text-shadow: 1px 1px 4px $grey-900; opacity: 0.90;
+h1,h2,h3,h4,h5,h6 { color: $primary-900; font-weight: 300; text-shadow: 2px 2px 4px $grey-900; opacity: 0.90;
 	margin:0;
 	padding:0;
 }
