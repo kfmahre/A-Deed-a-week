@@ -36,13 +36,12 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $grey-100;
+	background-color: $grey-300;
 	width: 100%;
 	color: #000000;
 	margin:0;
 	padding:0;
 	border: 5px solid transparent;
-	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 }
 
 a { text-decoration: none; color: $primary-txt;}
@@ -237,35 +236,6 @@ article.deeds{
 	transition: all linear 0.2s;
 }
 
-/* footer */
-
-footer ul {
-	list-style-type: none;
-	li {
-			display: inline;
-		a {
-				font-size: 2.0em;
-				margin: 15px 5px;
-				padding: 5px 7px;
-				background-color: transparent;
-				color: $primary-txt-dk;
-				border: 2px solid $primary-txt-dk;
-				transition: all linear 0.2s;
-				text-align: center;
-				-webkit-border-radius: 4px;
-				-moz-border-radius: 4px;
-				border-radius: 4px;
-				white-space: nowrap;
-				line-height: 200%;
-			}
-			a:hover {
-				background-color: $primary-900;
-				transition: all linear 0.2s;
-			}
-		}
-}
-
-
 /** SAVE MODAL **/
 
 div#save{
@@ -344,10 +314,28 @@ article.comment{
 
 /** FOOTER **/
 
-footer{
+footer {
 	@include box-shadow-inset(0px,10px,20px,rgba(0,0,0,0.4));
 	padding:20px 0;
-	color:#FFF;
-	background-color: $grey-50;
+	background-color: $grey-100;
+}
+
+footer ul {
+	list-style-type: none;
+	li {
+			display: inline;
+		a {
+				font-size: 1.0em;
+				background-color: transparent;
+				color: $primary;
+				transition: all linear 0.2s;
+				text-align: center;
+				white-space: nowrap;
+			}
+			a:hover {
+				background-color: $primary-900;
+				transition: all linear 0.2s;
+			}
+		}
 }
 
