@@ -93,7 +93,7 @@ header {
 	margin: 0 0 10px 0;
 	padding: 0;
 	border: 5px solid transparent;
-	background: $grey-800;
+	background: $grey-300;
 	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 	z-index: 5;
 }
@@ -330,7 +330,7 @@ footer {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		a {
-			color: $primary-900;
+			color: $primary;
 		}
 		a:hover {
 			color: $accent-color;
