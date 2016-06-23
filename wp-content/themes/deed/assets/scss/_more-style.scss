@@ -36,7 +36,7 @@ $grey-800: #424242;
 
 body {
 	font-family: $font-stack;
-	background-color: $grey-100;
+	background-color: $grey-300;
 	width: 100%;
 	color: #000000;
 	margin:0;
@@ -178,8 +178,8 @@ header {
 /** PROJECTS ROW **/
 .searchinput {
 	margin: 0 5px;
-	padding:10px 0;
-	font-size: 1.9em;
+	padding:10px 10px;
+	font-size: 1.1em;
 	border: 5px solid transparent;
 	border-radius: 0;
 	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
