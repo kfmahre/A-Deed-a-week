@@ -4,11 +4,11 @@
 
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<label for="searchInput"><h3>Latest Posts</h3></label>
-				<div class="input-group">
+				<label for="searchInput"><h4>Latest Posts</h4></label>
+				<div class="input-group input-group-lg">
 					<input ng-model="postfilter" placeholder="Search..." class="form-control searchinput" id="searchInput">
-				</div>
-			</div>
+				</div><!-- input-group -->
+			</div><!-- row -->
 			<div class="row-fluid">
 				<article ng-repeat="post in posts | filter:postfilter" class="deeds">
 					<h3>{{post.title.rendered}}</h3>
