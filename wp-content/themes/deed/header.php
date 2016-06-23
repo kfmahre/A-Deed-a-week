@@ -70,4 +70,4 @@
 	</header><!-- #masthead -->
 
 <div id="main" class="container-fluid content-wrapper">
-	<div class="container">
+	<div class="container floating-middle">
