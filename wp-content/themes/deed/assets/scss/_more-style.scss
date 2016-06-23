@@ -68,7 +68,6 @@ p { font-size: 1.1em; }
 
 hr {
 	border: 1px solid $accent-color;
-	box-shadow: 1px 2px 4px $grey-800;
 }
 
 *:focus {
@@ -180,13 +179,17 @@ header {
 #searchInput {
 
 	font-size: 1.1em;
-	border: 5px solid transparent;
+	border-top: 5px solid $grey-100;
+	border-left: 5px solid $grey-100;
+	border-right: 5px solid $grey-50;
+	border-bottom: 5px solid $grey-50;
 	border-radius: 0;
 	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
 #searchInput:focus {
 	outline: none;
+	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 }
 
 article.deeds{
@@ -194,10 +197,10 @@ article.deeds{
 	width: 90%;
 	margin:10px 5px;
 	padding:10px;
-	border-top: 5px solid $grey-50;
-	border-left: 5px solid $grey-50;
-	border-right: 5px solid transparent;
-	border-bottom: 5px solid transparent;
+	border-top: 5px solid $grey-100;
+	border-left: 5px solid $grey-100;
+	border-right: 5px solid $grey-50;
+	border-bottom: 5px solid $grey-50;
 	@include box-shadow(1px,5px,10px,rgba(0,0,0,0.4));
 
 	span.date{
